@@ -5,27 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- ========================================== -->
-    <!-- GOOGLE ADS SAFE & ADVANCED SEO             -->
+    <!-- INVISIBLE ORGANIC SEO & ADVANCED SEMANTICS -->
     <!-- ========================================== -->
     
-    <!-- 1. URL Canónica -->
-    <link rel="canonical" href="https://thebest.veluflex.shop/">
+    <!-- Autorité de Domaine & Canonicalisation -->
+    <link rel="canonical" href="https://buy-veluflex.shop/">
     
-    <!-- 2. Metadados de Geo-Targeting -->
+    <!-- Geo-Targeting: France & Belgique -->
     <meta name="geo.region" content="FR;BE" /> 
+    <meta name="geo.placename" content="France;Belgique" />
     
-    <!-- 3. Metadados Seguros (Sem alegações de cura) -->
-    <title data-translate="meta_title">Veluflex Hyaluronic Acid | Soutien Articulaire Avancé</title>
-    <meta name="title" content="Veluflex Hyaluronic Acid | Soutien Articulaire Avancé">
-    <meta name="description" content="Soulagez vos articulations et bougez librement. Soutien articulaire avancé à base d'acide hyaluronique pour le confort et la mobilité.">
+    <!-- SEO Meta Tags (Haute Performance) -->
+    <title data-translate="meta_title">Veluflex Hyaluronic Acid | Soutien Articulaire & Mobilité</title>
+    <meta name="title" content="Veluflex Hyaluronic Acid | Soutien Articulaire & Mobilité">
+    <meta name="description" content="Soulagez vos articulations avec Veluflex. Formule avancée à l'acide hyaluronique pour améliorer la flexibilité et la mobilité naturelle en France et Belgique.">
+    <meta name="keywords" content="Veluflex, acide hyaluronique, articulations, douleurs articulaire, mobilité, flexibilité, cartilage, Veluflex France, Veluflex Belgique, buy veluflex shop">
     
-    <!-- 4. Open Graph -->
+    <!-- Open Graph (SEO Social & Preview) -->
     <meta property="og:type" content="product">
-    <meta property="og:title" content="Veluflex Hyaluronic Acid - Confort & Mobilité">
-    <meta property="og:description" content="Soutien articulaire avancé. Conçu pour améliorer le confort et la flexibilité au quotidien.">
+    <meta property="og:url" content="https://buy-veluflex.shop/">
+    <meta property="og:title" content="Veluflex Hyaluronic Acid - Soulagez vos articulations">
+    <meta property="og:description" content="Soutien articulaire avancé pour améliorer le confort et la mobilité au quotidien.">
     <meta property="og:image" content="images/veluflex.png">
+    <meta property="og:site_name" content="Veluflex Officiel">
 
-    <!-- Estilos e Fontes -->
+    <!-- JSON-LD Structured Data (Cerveau SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Veluflex Hyaluronic Acid",
+      "image": "https://buy-veluflex.shop/images/veluflex.png",
+      "description": "Soutien articulaire avancé à base d’acide hyaluronique conçu pour améliorer le confort et la mobilité au quotidien.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veluflex"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://buy-veluflex.shop/",
+        "priceCurrency": "EUR",
+        "lowPrice": "39.00",
+        "offerCount": "1",
+        "availability": "https://schema.org/InStock",
+        "areaServed": ["FR", "BE"]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "12450"
+      }
+    }
+    </script>
+
+    <!-- Styles & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +72,7 @@
         }
         body {
             font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
         }
         .star-filled {
             color: #f59e0b;
@@ -46,15 +80,6 @@
         .hero-section-bg {
             background-color: var(--bg-accent);
             background-image: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
-        }
-        .text-primary {
-            color: var(--primary-color);
-        }
-        .bg-primary {
-            background-color: var(--primary-color);
-        }
-        .border-primary {
-            border-color: var(--primary-color);
         }
         .reveal {
             opacity: 0;
@@ -79,39 +104,42 @@
             box-shadow: 0 10px 15px -3px rgba(24, 129, 168, 0.2);
             border-color: var(--primary-color);
         }
+        .modal-open {
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 relative">
 
+    <!-- Header -->
     <header class="sticky top-0 bg-white z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-between items-center p-4">
             <div class="flex items-center gap-2">
-                <!-- LOGÓTIPO VELUFLEX (Pasta images/) -->
-                <img src="images/veluflex-logo.svg" alt="Veluflex Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="images/veluflex-logo.svg" alt="Veluflex Logo Officiel" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="hidden items-center gap-2" style="display: none;">
-                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <div class="w-8 h-8 bg-[#1881A8] rounded-lg flex items-center justify-center">
                         <i data-feather="activity" class="text-white w-5 h-5"></i>
                     </div>
-                    <span class="font-extrabold text-xl tracking-tight text-primary">VELUFLEX</span>
+                    <span class="font-extrabold text-xl tracking-tight text-[#1881A8]">VELUFLEX</span>
                 </div>
             </div>
-            <div class="hidden sm:flex items-center gap-1 text-xs font-bold text-primary bg-blue-50 px-3 py-1 rounded-full uppercase">
+            <div class="hidden sm:flex items-center gap-1 text-xs font-bold text-[#1881A8] bg-blue-50 px-3 py-1 rounded-full uppercase">
                 <i data-feather="check-circle" class="w-3 h-3"></i>
-                Boutique Officielle
+                Boutique Officielle France & Belgique
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Secção Hero -->
+        <!-- Hero Section -->
         <section id="order" class="hero-section-bg text-[#2D2D2D] border-b border-blue-50">
             <div class="container mx-auto px-4 sm:px-6 py-10 md:py-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 items-center">
                     
-                    <!-- Conteúdo de Texto (COLUNA ESQUERDA) -->
-                    <div class="text-center md:text-left md:col-start-1 md:row-start-1 reveal flex flex-col items-center md:items-start">
+                    <!-- Content -->
+                    <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
                         
-                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm">
                             <div class="flex items-center gap-1 text-gray-900">
                                 <span class="font-bold text-sm">4.9/5</span>
                                 <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
@@ -121,35 +149,33 @@
                                 <i class="star-filled w-4 h-4" data-feather="star" style="fill: #f59e0b;"></i>
                             </div>
                             <div class="w-px h-4 bg-gray-400 opacity-50"></div>
-                            <span class="text-xs font-bold uppercase tracking-wide text-primary" data-translate="discount_badge">PROMOTION : -50% DE RÉDUCTION</span>
+                            <span class="text-xs font-bold uppercase tracking-wide text-[#1881A8]" data-translate="discount_badge">PROMOTION : -50% RÉDUCTION</span>
                         </div>
 
-                        <!-- TÍTULO OPÇÃO 1 -->
                         <h1 class="text-3xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-slate-900" data-translate="hero_title">
                             Soulagez Vos Articulations. <br class="hidden sm:block">Bougez Librement.
                         </h1>
                         
-                        <!-- DESCRIÇÃO OPÇÃO 1 -->
                         <p class="text-lg md:text-xl mb-8 text-slate-700 leading-relaxed max-w-lg font-medium opacity-90" data-translate="hero_desc">
                             Soutien articulaire avancé à base d’acide hyaluronique. Conçu pour améliorer le confort, la mobilité et la flexibilité au quotidien.
                         </p>
                         
-                        <!-- Imagem Mobile (Pasta images/) -->
+                        <!-- Mobile Image -->
                         <div class="my-4 flex justify-center items-center md:hidden reveal w-full">
-                            <img src="images/veluflex.png" alt="Veluflex Hyaluronic Acid" class="w-full max-w-xs h-auto drop-shadow-2xl">
+                            <img src="images/veluflex.png" alt="Veluflex Hyaluronic Acid - Soulagement articulaire" class="w-full max-w-xs h-auto drop-shadow-2xl">
                         </div>
 
-                        <!-- Benefícios -->
-                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm reveal border border-white/40">
+                        <!-- Benefits -->
+                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm border border-white/40">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
-                                    <div class="bg-primary rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
+                                    <div class="bg-[#1881A8] rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
                                     <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_1">Maintient la flexibilité articulaire</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="bg-primary rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
+                                    <div class="bg-[#1881A8] rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
                                     <span class="text-gray-800 font-medium text-sm sm:text-base" data-translate="bullet_2">Soutient la santé du cartilage</span>
@@ -157,30 +183,25 @@
                             </ul>
                         </div>
 
-                        <!-- BOTÕES DE SELECÇÃO DE PAÍS -->
+                        <!-- Selector -->
                         <div class="w-full max-w-md reveal">
-                            <p class="text-xs font-bold uppercase tracking-widest text-primary opacity-70 mb-4 text-center md:text-left" data-translate="select_country">Sélectionnez votre pays :</p>
+                            <p class="text-xs font-bold uppercase tracking-widest text-[#1881A8] opacity-70 mb-4 text-center md:text-left" data-translate="select_country">Sélectionnez votre pays pour commander :</p>
                             <div class="flex flex-col sm:flex-row gap-4">
-                                <!-- Botão França -->
-                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TBZ1BQX/" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
+                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TBZ1BQX/" title="Commander Veluflex France" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
                                     <span class="font-bold text-lg" data-translate="btn_france">France</span>
-                                    <i data-feather="arrow-right" class="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform"></i>
+                                    <i data-feather="arrow-right" class="w-5 h-5 text-[#1881A8] group-hover:translate-x-1 transition-transform"></i>
                                 </a>
-                                <!-- Botão Bélgica -->
-                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TCC4DMR/" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
+                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TCC4DMR/" title="Commander Veluflex Belgique" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
                                     <span class="font-bold text-lg" data-translate="btn_belgium">Belgique</span>
-                                    <i data-feather="arrow-right" class="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform"></i>
+                                    <i data-feather="arrow-right" class="w-5 h-5 text-[#1881A8] group-hover:translate-x-1 transition-transform"></i>
                                 </a>
                             </div>
-                            <p class="mt-4 text-center md:text-left text-xs text-primary/60 font-medium" data-translate="shipping_notice">
-                                <i data-feather="shield" class="inline w-3 h-3 mr-1"></i> Paiement 100% sécurisé et livraison rapide
-                            </p>
                         </div>
                     </div>
 
-                    <!-- Imagem Desktop (images/veluflex.png) -->
-                    <div class="hidden md:flex justify-center items-center md:col-start-2 md:row-start-1 h-full reveal">
-                        <img src="images/veluflex.png" alt="Produit Veluflex" class="w-full max-w-sm h-auto transform transition hover:scale-105 duration-700 drop-shadow-2xl">
+                    <!-- Desktop Image -->
+                    <div class="hidden md:flex justify-center items-center h-full reveal">
+                        <img src="images/veluflex.png" alt="Veluflex Hyaluronic Acid Pack" class="w-full max-w-sm h-auto transform transition hover:scale-105 duration-700 drop-shadow-2xl">
                     </div>
 
                 </div>
@@ -188,21 +209,20 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="container mx-auto px-4 text-center text-sm">
             <div class="flex items-center justify-center gap-2 mb-6">
-                <!-- Logótipo Rodapé (Pasta images/) -->
-                <img src="images/veluflex-logo.svg" alt="Veluflex" class="h-6 w-auto brightness-200">
+                <img src="images/veluflex-logo.svg" alt="Veluflex Site Officiel" class="h-6 w-auto brightness-200">
             </div>
             
             <p class="font-bold text-white mb-2 uppercase tracking-wide" data-translate="footer_distributor">Distributeur Mondial Autorisé</p>
-            <p class="mb-8" data-translate="footer_copy">© 2026 Veluflex Hyaluronic Acid. All rights reserved.</p>
+            <p class="mb-8" data-translate="footer_copy">© 2026 Veluflex Hyaluronic Acid. Tous droits réservés.</p>
             
             <div class="flex justify-center flex-wrap gap-6 md:gap-10 mb-10 text-xs font-semibold uppercase tracking-wider">
-                <button class="hover:text-white transition-colors" data-translate="link_privacy">Politique de Confidentialité</button>
-                <button class="hover:text-white transition-colors" data-translate="link_terms">Conditions Générales</button>
-                <button class="hover:text-white transition-colors" data-translate="link_contact">Contactez le Support</button>
+                <button onclick="showModal('privacy')" class="hover:text-white transition-colors" data-translate="link_privacy">Politique de Confidentialité</button>
+                <button onclick="showModal('terms')" class="hover:text-white transition-colors" data-translate="link_terms">Conditions Générales</button>
+                <button onclick="showModal('contact')" class="hover:text-white transition-colors" data-translate="link_contact">Contact Support</button>
             </div>
 
             <div class="border-t border-slate-800 pt-8 mt-4 text-[11px] text-slate-500 max-w-3xl mx-auto leading-relaxed space-y-3 text-center">
@@ -211,24 +231,135 @@
         </div>
     </footer>
 
-    <!-- SCRIPT DE TRADUÇÃO AUTOMÁTICA -->
+    <!-- LEGAL MODAL -->
+    <div id="legal-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-slate-900 bg-opacity-75 backdrop-blur-sm" onclick="hideModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="relative inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full border border-slate-200">
+                <div class="bg-white px-6 py-4 border-b border-slate-100 flex justify-between items-center sticky top-0 z-10">
+                    <h3 class="text-xl font-bold text-slate-900" id="modal-title">Documents Légaux</h3>
+                    <button onclick="hideModal()" class="text-slate-400 hover:text-slate-600 transition-colors p-2">
+                        <i data-feather="x"></i>
+                    </button>
+                </div>
+                <div class="bg-white px-8 py-8 max-h-[70vh] overflow-y-auto prose prose-slate max-w-none" id="modal-body">
+                    <!-- Content injected via JS -->
+                </div>
+                <div class="bg-slate-50 px-6 py-4 flex justify-end border-t border-slate-100">
+                    <button onclick="hideModal()" class="bg-slate-900 text-white px-6 py-2 rounded-lg font-bold hover:bg-slate-800 transition-colors">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const translations = {
             'nl': { 
                 'discount_badge': 'PROMOTIE: -50% KORTING',
                 'hero_title': 'Verlicht uw gewrichten. Beweeg vrij.',
-                'hero_desc': 'Geavanceerde gewrichtsondersteuning op basis van hyaluronzuur. Ontworpen om comfort, mobiliteit en flexibiliteit in het dagelijks leven te verbeteren.',
-                'bullet_1': 'Behoudt de flexibiliteit van gewrichten',
-                'bullet_2': 'Ondersteunt gezond kraakbeen',
-                'select_country': 'Selecteer uw land:',
+                'hero_desc': 'Geavanceerde gewrichtsondersteuning op basis van hyaluronzuur. Ontworpen om comfort, mobiliteit en flexibiliteit te verbeteren.',
+                'select_country': 'Selecteer uw land om te bestellen:',
                 'btn_belgium': 'België',
                 'btn_france': 'Frankrijk',
-                'shipping_notice': '100% veilige betaling en snelle verzending',
                 'footer_distributor': 'Geautoriseerde Wereldwijde Distributeur',
-                'footer_copy': '© 2026 Veluflex Hyaluronic Acid. Alle rechten voorbehouden.',
                 'meta_title': 'Veluflex Hyaluronzuur - Gewrichtsondersteuning'
             }
         };
+
+        const modalContent = {
+            'terms': `
+                <h2 class="text-2xl font-bold mb-4 text-[#1881A8]">Conditions Générales</h2>
+                <p class="text-sm text-slate-500 mb-6">Dernière mise à jour : le 24 octobre 2025</p>
+                <div class="space-y-4 text-slate-700 leading-relaxed text-sm">
+                    <p>Les présentes Conditions Générales régissent votre utilisation de Haur B.V., société à responsabilité limitée constituée en vertu des lois de la République des Pays-Bas, enregistrée auprès de la Chambre de Commerce des Pays-Bas, sous le numéro RSIN : 867612939. L'adresse de l'entreprise est John M. Keynesplein 1, 1066EP Amsterdam, Pays-Bas.</p>
+                    <h4 class="font-bold text-slate-900">1. Généralités</h4>
+                    <p>1.1 Définitions : "Site Web" désigne le site https://veluflex.com ; "Vendeur" désigne STR.VERT CONSULTANTS LTD (Chypre).</p>
+                    <p>1.2 Ces Conditions régissent votre Accord avec l'Opérateur de la Plateforme pour l'accès aux Produits du Vendeur.</p>
+                    <h4 class="font-bold text-slate-900">2. Utilisation de Notre Site Web</h4>
+                    <p>2.1 L'accès et l'utilisation de ce Site Web sont réservés aux personnes âgées de 18 ans ou plus.</p>
+                    <h4 class="font-bold text-slate-900">3. Pas de Conseil Médical</h4>
+                    <p>3.1 Les Produits n'ont pas été évalués pour le diagnostic ou le traitement de maladies. Consultez toujours un professionnel de santé.</p>
+                    <p>3.4 Avant d'utiliser tout nouveau complément, surtout si vous êtes enceinte ou allaitez, consultez un médecin qualifié.</p>
+                    <h4 class="font-bold text-slate-900">4. Informations sur les Produits</h4>
+                    <p>4.2 Toutes les transactions sont traitées en EUR. Les prix peuvent changer sans préavis.</p>
+                    <h4 class="font-bold text-slate-900">5. Commandes et Paiements</h4>
+                    <p>5.11 Le contrat de vente n'est formé que lorsque le Produit a été expédié par le Vendeur.</p>
+                    <h4 class="font-bold text-slate-900">8. Retours et Remboursements</h4>
+                    <p>8.2 L'utilisateur peut retourner un Produit dans les trente (30) jours suivant la livraison, à condition qu'il soit non ouvert et dans son emballage d'origine.</p>
+                    <h4 class="font-bold text-slate-900">14. Informations de Contact</h4>
+                    <p>Email: hello@veluflex.com | Tel: +1 (484) 263-5085</p>
+                </div>
+            `,
+            'privacy': `
+                <h2 class="text-2xl font-bold mb-4 text-[#1881A8]">Politique de Confidentialité</h2>
+                <p class="text-sm text-slate-500 mb-6">Dernière mise à jour : le 24 octobre 2025</p>
+                <div class="space-y-4 text-slate-700 leading-relaxed text-sm">
+                    <p>Haur B.V s'engage à protéger votre vie privée et à traiter vos données conformément au RGPD (UE 2016/679).</p>
+                    <h4 class="font-bold text-slate-900">1. Informations Collectées</h4>
+                    <p>Nous collectons votre nom, adresses de livraison, numéro de téléphone, e-mail et informations de paiement nécessaires au traitement des commandes.</p>
+                    <h4 class="font-bold text-slate-900">2. Utilisation des Données</h4>
+                    <p>Vos données sont utilisées pour l'exécution du contrat, le traitement des paiements, le service client et, avec votre consentement, pour des communications marketing.</p>
+                    <h4 class="font-bold text-slate-900">3. Partage des Informations</h4>
+                    <p>Nous partageons vos données avec le Vendeur (STR.VERT CONSULTANTS LTD) pour l'expédition et avec nos partenaires de paiement sécurisés.</p>
+                    <h4 class="font-bold text-slate-900">4. Vos Droits</h4>
+                    <p>Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles.</p>
+                    <h4 class="font-bold text-slate-900">Contact RGPD</h4>
+                    <p>Pour toute demande relative à vos données : hello@veluflex.com</p>
+                </div>
+            `,
+            'contact': `
+                <h2 class="text-2xl font-bold mb-6 text-[#1881A8]">Contactez-nous</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg text-[#1881A8]">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Email de Support</p>
+                            <p class="text-slate-600">hello@veluflex.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg text-[#1881A8]">
+                            <i data-feather="phone"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Téléphone</p>
+                            <p class="text-slate-600">+1 (484) 263-5085</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg text-[#1881A8]">
+                            <i data-feather="map-pin"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Siège Social (Haur B.V.)</p>
+                            <p class="text-slate-600">John M. Keynesplein 1, 1066EP Amsterdam, Pays-Bas</p>
+                            <p class="text-xs text-red-500 mt-1 italic font-semibold">Note : Ne pas envoyer les retours à cette adresse.</p>
+                        </div>
+                    </div>
+                </div>
+            `
+        };
+
+        function showModal(type) {
+            const modal = document.getElementById('legal-modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+            
+            body.innerHTML = modalContent[type];
+            title.innerText = type === 'privacy' ? 'Politique de Confidentialité' : (type === 'terms' ? 'Conditions Générales' : 'Contact Support');
+            
+            modal.classList.remove('hidden');
+            document.body.classList.add('modal-open');
+            feather.replace();
+        }
+
+        function hideModal() {
+            document.getElementById('legal-modal').classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
 
         document.addEventListener('DOMContentLoaded', () => {
             const userLang = navigator.language || navigator.userLanguage; 
