@@ -26,7 +26,7 @@
     <meta property="og:url" content="https://buy-veluflex.shop/">
     <meta property="og:title" content="Veluflex Hyaluronic Acid - Soulagez vos articulations">
     <meta property="og:description" content="Soutien articulaire avancé pour améliorer le confort et la mobilité au quotidien.">
-    <meta property="og:image" content="images/veluflex.png">
+    <meta property="og:image" content="images/veluflex1.png">
     <meta property="og:site_name" content="Veluflex Officiel">
 
     <!-- JSON-LD Structured Data (Cerveau SEO) -->
@@ -35,7 +35,7 @@
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Veluflex Hyaluronic Acid",
-      "image": "https://buy-veluflex.shop/images/veluflex.png",
+      "image": "https://buy-veluflex.shop/images/veluflex1.png",
       "description": "Soutien articulaire avancé à base d’acide hyaluronique conçu pour améliorer le confort et la mobilité au quotidien.",
       "brand": {
         "@type": "Brand",
@@ -107,6 +107,10 @@
         .modal-open {
             overflow: hidden;
         }
+        /* Ajuste fino para proporção da imagem */
+        .product-image-shadow {
+            filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 relative">
@@ -160,9 +164,9 @@
                             Soutien articulaire avancé à base d’acide hyaluronique. Conçu pour améliorer le confort, la mobilité et la flexibilité au quotidien.
                         </p>
                         
-                        <!-- Mobile Image -->
-                        <div class="my-4 flex justify-center items-center md:hidden reveal w-full">
-                            <img src="images/veluflex.png" alt="Veluflex Hyaluronic Acid - Soulagement articulaire" class="w-full max-w-xs h-auto drop-shadow-2xl">
+                        <!-- Mobile Image (Proporção Mobile) -->
+                        <div class="my-6 flex justify-center items-center md:hidden reveal w-full">
+                            <img src="images/veluflex1.png" alt="Veluflex Hyaluronic Acid - Soulagement articulaire" class="w-[85%] max-w-xs h-auto product-image-shadow transform hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <!-- Benefits -->
@@ -199,9 +203,9 @@
                         </div>
                     </div>
 
-                    <!-- Desktop Image -->
+                    <!-- Desktop Image (Proporção Desktop) -->
                     <div class="hidden md:flex justify-center items-center h-full reveal">
-                        <img src="images/veluflex.png" alt="Veluflex Hyaluronic Acid Pack" class="w-full max-w-sm h-auto transform transition hover:scale-105 duration-700 drop-shadow-2xl">
+                        <img src="images/veluflex1.png" alt="Veluflex Hyaluronic Acid Pack" class="w-full max-w-md h-auto transform transition hover:scale-105 duration-700 product-image-shadow">
                     </div>
 
                 </div>
@@ -217,7 +221,7 @@
             </div>
             
             <p class="font-bold text-white mb-2 uppercase tracking-wide" data-translate="footer_distributor">Distributeur Mondial Autorisé</p>
-            <p class="mb-8" data-translate="footer_copy">© 2026 Veluflex Hyaluronic Acid. Tous droits réservés.</p>
+            <p class="mb-8" data-translate="footer_copy">© 2026 Veluflex Hyaluronic Acid. All rights reserved.</p>
             
             <div class="flex justify-center flex-wrap gap-6 md:gap-10 mb-10 text-xs font-semibold uppercase tracking-wider">
                 <button onclick="showModal('privacy')" class="hover:text-white transition-colors" data-translate="link_privacy">Politique de Confidentialité</button>
