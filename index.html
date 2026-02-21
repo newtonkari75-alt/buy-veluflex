@@ -96,20 +96,59 @@
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(24, 129, 168, 0.1);
         }
+        
+        /* Botões de Conversão Melhorados */
         .btn-country {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
         }
         .btn-country:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(24, 129, 168, 0.2);
-            border-color: var(--primary-color);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 30px -5px rgba(24, 129, 168, 0.3);
+            background-color: #fff;
         }
+        .btn-country::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(24, 129, 168, 0.05), transparent);
+            transition: 0.5s;
+        }
+        .btn-country:hover::after {
+            left: 100%;
+        }
+
         .modal-open {
             overflow: hidden;
         }
         /* Ajuste fino para proporção da imagem */
         .product-image-shadow {
             filter: drop-shadow(0 25px 35px rgba(24, 129, 168, 0.2));
+        }
+
+        /* Efeito de destaque no texto de comando */
+        .text-highlight {
+            position: relative;
+            display: inline-block;
+            padding: 2px 8px;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+        .text-highlight::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(24, 129, 168, 0.1);
+            z-index: -1;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -187,19 +226,38 @@
                             </ul>
                         </div>
 
-                        <!-- Selector -->
-                        <div class="w-full max-w-md reveal">
-                            <p class="text-xs font-bold uppercase tracking-widest text-[#1881A8] opacity-70 mb-4 text-center md:text-left" data-translate="select_country">Sélectionnez votre pays pour commander :</p>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TBZ1BQX/" title="Commander Veluflex France" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
-                                    <span class="font-bold text-lg" data-translate="btn_france">France</span>
-                                    <i data-feather="arrow-right" class="w-5 h-5 text-[#1881A8] group-hover:translate-x-1 transition-transform"></i>
+                        <!-- Country Selector Section -->
+                        <div class="w-full max-w-md reveal p-6 rounded-3xl bg-white/40 border border-[#1881A8]/10 shadow-inner">
+                            <div class="mb-6 text-center md:text-left">
+                                <span class="text-highlight text-sm uppercase tracking-widest mb-2" data-translate="select_country">
+                                    Sélectionnez votre pays pour commander :
+                                </span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-5">
+                                <!-- France Button -->
+                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TBZ1BQX/" title="Commander Veluflex France" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white px-6 py-5 rounded-2xl flex-1 shadow-lg">
+                                    <div class="flex flex-col items-start">
+                                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Expédition</span>
+                                        <span class="font-black text-xl text-slate-800" data-translate="btn_france">France</span>
+                                    </div>
+                                    <div class="bg-blue-50 p-2 rounded-full group-hover:bg-[#1881A8] group-hover:text-white transition-colors">
+                                        <i data-feather="arrow-right" class="w-6 h-6"></i>
+                                    </div>
                                 </a>
-                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TCC4DMR/" title="Commander Veluflex Belgique" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white text-gray-900 border-2 border-transparent px-6 py-5 rounded-xl flex-1 shadow-md">
-                                    <span class="font-bold text-lg" data-translate="btn_belgium">Belgique</span>
-                                    <i data-feather="arrow-right" class="w-5 h-5 text-[#1881A8] group-hover:translate-x-1 transition-transform"></i>
+                                <!-- Belgium Button -->
+                                <a href="https://www.fasttrack37.com/PM7HK3TH/2TCC4DMR/" title="Commander Veluflex Belgique" rel="noopener noreferrer" class="btn-country group flex items-center justify-between bg-white px-6 py-5 rounded-2xl flex-1 shadow-lg">
+                                    <div class="flex flex-col items-start">
+                                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Expédition</span>
+                                        <span class="font-black text-xl text-slate-800" data-translate="btn_belgium">Belgique</span>
+                                    </div>
+                                    <div class="bg-blue-50 p-2 rounded-full group-hover:bg-[#1881A8] group-hover:text-white transition-colors">
+                                        <i data-feather="arrow-right" class="w-6 h-6"></i>
+                                    </div>
                                 </a>
                             </div>
+                            <p class="mt-5 text-center md:text-left text-[11px] text-[#1881A8] font-bold uppercase tracking-tight flex items-center justify-center md:justify-start gap-2" data-translate="shipping_notice">
+                                <i data-feather="truck" class="w-4 h-4"></i> Livraison Prioritaire avec Numéro de Suivi
+                            </p>
                         </div>
                     </div>
 
@@ -254,7 +312,7 @@
                     </button>
                 </div>
                 <div class="bg-white px-8 py-8 max-h-[70vh] overflow-y-auto prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed" id="modal-body">
-                    <!-- Content injected via JS -->
+                    <!-- Conteúdo injetado via JS -->
                 </div>
                 <div class="bg-slate-50 px-6 py-4 flex justify-end border-t border-slate-100">
                     <button onclick="hideModal()" class="bg-[#1881A8] text-white px-8 py-2 rounded-lg font-bold hover:brightness-110 transition-all">Fermer</button>
@@ -273,7 +331,8 @@
                 'btn_belgium': 'België',
                 'btn_france': 'Frankrijk',
                 'footer_distributor': 'Geautoriseerde Wereldwijde Distributeur',
-                'meta_title': 'Veluflex Hyaluronzuur - Gewrichtsondersteuning'
+                'meta_title': 'Veluflex Hyaluronzuur - Gewrichtsondersteuning',
+                'shipping_notice': 'Prioritaire levering com trackingnummer'
             }
         };
 
