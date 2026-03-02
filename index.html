@@ -181,6 +181,33 @@
         img {
             content-visibility: auto;
         }
+
+        /* Google Translate Customization to stay Premium */
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0px !important; }
+        #google_translate_element {
+            min-height: 38px;
+        }
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: 1px solid #e5e7eb !important;
+            padding: 4px 12px !important;
+            border-radius: 9999px !important;
+            font-size: 10px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.1em !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        .goog-te-gadget-icon { display: none !important; }
+        .goog-te-menu-value span { color: #9ca3af !important; border-left: none !important; }
+        .goog-te-menu-value:before {
+            content: "\e9cb"; /* Lucide Globe Icon fallback or simple text */
+            font-family: 'lucide' !important;
+            margin-right: 8px;
+            color: #4f8cf6;
+        }
     </style>
 </head>
 
@@ -212,14 +239,25 @@
                 <img src="images/veluflex_logo_new.webp" alt="Veluflex Luxury Logo" class="h-10 w-auto" loading="eager">
                 <span class="sr-only">Veluflex™ Joint Solutions</span>
             </a>
-            <div class="hidden lg:flex gap-10 text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">
-                <a href="#reviews" class="hover:text-brand-accent transition">Verified Reviews</a>
-                <a href="#faq" class="hover:text-brand-accent transition">Support FAQ</a>
+            
+            <div class="hidden lg:flex items-center gap-10">
+                <div class="flex gap-10 text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">
+                    <a href="#reviews" class="hover:text-brand-accent transition">Verified Reviews</a>
+                    <a href="#faq" class="hover:text-brand-accent transition">Support FAQ</a>
+                </div>
+                <!-- Google Translate Desktop -->
+                <div id="google_translate_element"></div>
             </div>
-            <a href="#countries"
-                class="bg-brand-dark text-white px-7 py-3 rounded-full font-black text-[10px] shadow-premium hover:bg-brand-accent transition-all uppercase tracking-widest active:scale-95">
-                ORDER NOW
-            </a>
+
+            <div class="flex items-center gap-4">
+                <!-- Mobile Translate Icon (Visible on small screens) -->
+                <div id="google_translate_element_mobile" class="lg:hidden"></div>
+                
+                <a href="#countries"
+                    class="bg-brand-dark text-white px-7 py-3 rounded-full font-black text-[10px] shadow-premium hover:bg-brand-accent transition-all uppercase tracking-widest active:scale-95">
+                    ORDER NOW
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -243,7 +281,7 @@
                         efficiently.
                     </h1>
 
-                    <!-- Mobile Product Image: order-2 -->
+                    <!-- Mobile Product Image -->
                     <div class="relative flex lg:hidden justify-center items-center my-8 order-2">
                         <div class="absolute inset-0 bg-blue-400/10 blur-[80px] rounded-full"></div>
                         <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
@@ -276,7 +314,7 @@
                     </p>
                 </div>
 
-                <!-- Desktop Product Image: Original Desktop Layout -->
+                <!-- Desktop Product Image -->
                 <div class="relative hidden lg:flex justify-center items-center">
                     <div class="absolute inset-0 bg-blue-400/10 blur-[120px] rounded-full"></div>
                     <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
@@ -622,10 +660,10 @@
                     <span class="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-brand-dark">Official European Operations & Independent Logistics Hub</span>
                 </div>
 
-                <!-- Google Ads Compliance Contact Section -->
+                <!-- Transparency Contact Section -->
                 <div class="text-[10px] text-gray-500 space-y-2 mb-8">
-                    <p class="font-bold uppercase tracking-widest">Customer Support & Region Transparency</p>
-                    <p>Distributed by: Veluflex EU Logistics Hub. Contact: support@buy-veluflex.shop | Registered Office: [Your Business Address Here]</p>
+                    <p class="font-bold uppercase tracking-widest text-brand-dark">Customer Support & Region Transparency</p>
+                    <p>Distributed by: Veluflex EU Logistics Hub. Contact: support@buy-veluflex.shop</p>
                 </div>
 
                 <p class="text-[9px] md:text-[10px] font-bold uppercase tracking-widest leading-relaxed text-gray-600">
@@ -648,7 +686,7 @@
         </div>
     </footer>
 
-    <!-- MODALS (Full Compliance) -->
+    <!-- MODALS -->
     <div id="privacyModal" class="modal fixed inset-0 z-[100] bg-brand-dark/95 backdrop-blur-2xl px-6 items-center justify-center" role="dialog" aria-modal="true">
         <div class="bg-white rounded-[2.5rem] md:rounded-[3rem] w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
             <div class="p-6 md:p-8 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
@@ -675,24 +713,35 @@
         </div>
     </div>
 
+    <!-- Google Translate Script & Logic -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,de,sv,nl', // FR, DE, SE, BE (French/Dutch)
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+            
+            // Duplicate for Mobile
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,de,sv,nl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element_mobile');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script>
         lucide.createIcons();
 
         function toggleFaq(el) {
             const item = el.parentElement;
             const isActive = item.classList.contains('active');
-            
-            // Fecha outros abertos
-            document.querySelectorAll('.faq-item').forEach(i => {
-                if (i !== item) i.classList.remove('active');
-            });
-            
-            // Abre o atual
-            if (!isActive) {
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active');
-            }
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
         }
 
         function openModal(id) { 
