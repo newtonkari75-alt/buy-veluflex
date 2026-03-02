@@ -142,7 +142,7 @@
             font-family: 'Bodoni Moda', serif;
         }
 
-        /* FAQ Accordion (Sanfona) */
+        /* FAQ Accordion */
         .faq-answer {
             max-height: 0;
             overflow: hidden;
@@ -182,7 +182,7 @@
             content-visibility: auto;
         }
 
-        /* Google Translate Customization to stay Premium */
+        /* Customização Estética do Google Translate */
         .goog-te-banner-frame.skiptranslate { display: none !important; }
         body { top: 0px !important; }
         #google_translate_element {
@@ -202,12 +202,6 @@
         }
         .goog-te-gadget-icon { display: none !important; }
         .goog-te-menu-value span { color: #9ca3af !important; border-left: none !important; }
-        .goog-te-menu-value:before {
-            content: "\e9cb"; /* Lucide Globe Icon fallback or simple text */
-            font-family: 'lucide' !important;
-            margin-right: 8px;
-            color: #4f8cf6;
-        }
     </style>
 </head>
 
@@ -245,12 +239,12 @@
                     <a href="#reviews" class="hover:text-brand-accent transition">Verified Reviews</a>
                     <a href="#faq" class="hover:text-brand-accent transition">Support FAQ</a>
                 </div>
-                <!-- Google Translate Desktop -->
+                <!-- Tradutor Desktop -->
                 <div id="google_translate_element"></div>
             </div>
 
             <div class="flex items-center gap-4">
-                <!-- Mobile Translate Icon (Visible on small screens) -->
+                <!-- Tradutor Mobile Icon -->
                 <div id="google_translate_element_mobile" class="lg:hidden"></div>
                 
                 <a href="#countries"
@@ -261,7 +255,7 @@
         </div>
     </nav>
 
-    <!-- 3. HERO SECTION -->
+    <!-- 3. HERO SECTION (Layout Mobile: Título > Imagem > Texto) -->
     <header class="relative pt-12 md:pt-16 pb-32 overflow-hidden bg-brand-bg">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -281,7 +275,7 @@
                         efficiently.
                     </h1>
 
-                    <!-- Mobile Product Image -->
+                    <!-- Imagem do Produto no Mobile (Logo após o título) -->
                     <div class="relative flex lg:hidden justify-center items-center my-8 order-2">
                         <div class="absolute inset-0 bg-blue-400/10 blur-[80px] rounded-full"></div>
                         <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
@@ -314,14 +308,14 @@
                     </p>
                 </div>
 
-                <!-- Desktop Product Image -->
+                <!-- Imagem do Produto no Desktop (Original) -->
                 <div class="relative hidden lg:flex justify-center items-center">
                     <div class="absolute inset-0 bg-blue-400/10 blur-[120px] rounded-full"></div>
                     <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
                         class="relative z-10 w-full max-w-[500px] transform hover:scale-[1.03] transition-transform duration-700"
                         width="500" height="500">
 
-                    <!-- Badges Layer -->
+                    <!-- Badges -->
                     <div class="absolute -left-4 top-1/2 -translate-y-1/2 space-y-4 z-20">
                         <div
                             class="bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white shadow-premium flex items-center gap-4">
@@ -345,7 +339,7 @@
     </header>
 
     <main>
-        <!-- Regional Distribution (2 columns on mobile) -->
+        <!-- Distribuição Regional (2 colunas no mobile) -->
         <section id="countries" class="py-24 md:py-32 bg-white border-t border-gray-50">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
@@ -442,7 +436,7 @@
             </div>
         </section>
 
-        <!-- Verified Reviews Section -->
+        <!-- Verified Reviews Section (Originais) -->
         <section id="reviews" class="py-24 md:py-32 bg-gray-50">
             <div class="max-w-7xl mx-auto px-6">
                 <header class="text-center mb-16 md:mb-24">
@@ -453,6 +447,7 @@
                 </header>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    <!-- Review 1 -->
                     <article
                         class="bg-gray-50 p-8 md:p-10 rounded-[3rem] border border-gray-100 flex flex-col h-full hover:shadow-2xl hover:bg-white transition-all duration-500 relative group">
                         <div class="flex text-yellow-400 gap-1 mb-6">
@@ -483,6 +478,7 @@
                         </footer>
                     </article>
 
+                    <!-- Review 2 -->
                     <article
                         class="bg-brand-dark text-white p-8 md:p-10 rounded-[3rem] shadow-premium lg:scale-105 relative z-10 text-center flex flex-col items-center">
                         <div
@@ -516,6 +512,7 @@
                         </footer>
                     </article>
 
+                    <!-- Review 3 -->
                     <article
                         class="bg-gray-50 p-8 md:p-10 rounded-[3rem] border border-gray-100 flex flex-col h-full hover:shadow-2xl hover:bg-white transition-all duration-500 relative group">
                         <div class="flex text-green-500 gap-1 mb-6 leading-none">
@@ -549,7 +546,7 @@
             </div>
         </section>
 
-        <!-- FAQ Section (Accordion Effect) -->
+        <!-- FAQ Section (Sanfona/Accordion Completo) -->
         <section id="faq" class="py-24 md:py-32 bg-white">
             <div class="max-w-3xl mx-auto px-6">
                 <header class="text-center mb-16 md:mb-20">
@@ -560,6 +557,7 @@
                 </header>
 
                 <div class="space-y-4 md:space-y-5">
+                    <!-- Pergunta 1 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -575,6 +573,7 @@
                         </div>
                     </div>
 
+                    <!-- Pergunta 2 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -590,6 +589,7 @@
                         </div>
                     </div>
 
+                    <!-- Pergunta 3 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -604,6 +604,7 @@
                         </div>
                     </div>
 
+                    <!-- Pergunta 4 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -619,6 +620,7 @@
                         </div>
                     </div>
 
+                    <!-- Pergunta 5 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -638,7 +640,7 @@
         </section>
     </main>
 
-    <!-- 9. FOOTER & COMPLIANCE -->
+    <!-- 9. FOOTER & COMPLIANCE (Copy Original Preservado) -->
     <footer class="bg-white text-gray-400 py-24 md:py-32 px-6 border-t border-gray-100">
         <div class="max-w-7xl mx-auto space-y-16 md:space-y-24">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-12">
@@ -686,7 +688,7 @@
         </div>
     </footer>
 
-    <!-- MODALS -->
+    <!-- MODALS (Full Compliance) -->
     <div id="privacyModal" class="modal fixed inset-0 z-[100] bg-brand-dark/95 backdrop-blur-2xl px-6 items-center justify-center" role="dialog" aria-modal="true">
         <div class="bg-white rounded-[2.5rem] md:rounded-[3rem] w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
             <div class="p-6 md:p-8 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
@@ -713,17 +715,16 @@
         </div>
     </div>
 
-    <!-- Google Translate Script & Logic -->
+    <!-- Google Translate Script -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: 'en,fr,de,sv,nl', // FR, DE, SE, BE (French/Dutch)
+                includedLanguages: 'en,fr,de,sv,nl',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
             }, 'google_translate_element');
             
-            // Duplicate for Mobile
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
                 includedLanguages: 'en,fr,de,sv,nl',
@@ -735,8 +736,10 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
+        // Inicialização de Ícones
         lucide.createIcons();
 
+        // Lógica do Accordion FAQ
         function toggleFaq(el) {
             const item = el.parentElement;
             const isActive = item.classList.contains('active');
@@ -744,6 +747,7 @@
             if (!isActive) item.classList.add('active');
         }
 
+        // Modais
         function openModal(id) { 
             const m = document.getElementById(id);
             m.style.display = 'flex'; 
