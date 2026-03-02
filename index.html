@@ -223,7 +223,7 @@
         </div>
     </nav>
 
-    <!-- 3. HERO SECTION -->
+    <!-- 3. HERO SECTION (Adjusted for Mobile Layout: Title > Image > Text) -->
     <header class="relative pt-12 md:pt-16 pb-32 overflow-hidden bg-brand-bg">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -243,7 +243,7 @@
                         efficiently.
                     </h1>
 
-                    <!-- Mobile Product Image: Appears after Title on Mobile -->
+                    <!-- Mobile Product Image: order-2 -->
                     <div class="relative flex lg:hidden justify-center items-center my-8 order-2">
                         <div class="absolute inset-0 bg-blue-400/10 blur-[80px] rounded-full"></div>
                         <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
@@ -276,7 +276,7 @@
                     </p>
                 </div>
 
-                <!-- Desktop Product Image: Original Position -->
+                <!-- Desktop Product Image: Original Desktop Layout -->
                 <div class="relative hidden lg:flex justify-center items-center">
                     <div class="absolute inset-0 bg-blue-400/10 blur-[120px] rounded-full"></div>
                     <img src="images/veluflex_product.webp" alt="Veluflex Advanced Joint Support"
@@ -307,8 +307,8 @@
     </header>
 
     <main>
-        <!-- Regional Distribution -->
-        <section id="countries" class="py-24 md:py-32 bg-white">
+        <!-- Regional Distribution (2 columns on mobile) -->
+        <section id="countries" class="py-24 md:py-32 bg-white border-t border-gray-50">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
                     <span
@@ -320,84 +320,83 @@
                         authorized regions:</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-16">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16">
                     <!-- France -->
                     <article class="h-full">
                         <a href="https://www.clickrtrckr.com/2LXFFTP/7GDSK5X/?uid=11714"
-                            class="group block bg-gray-50 p-6 md:p-8 rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
+                            class="group block bg-gray-50 p-4 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
                             <div
-                                class="mb-6 md:mb-8 rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
-                                <img src="https://flagcdn.com/w640/fr.png" alt="France" class="w-full h-24 sm:h-32 md:h-36 object-cover"
+                                class="mb-4 md:mb-8 rounded-xl md:rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
+                                <img src="https://flagcdn.com/w640/fr.png" alt="France" class="w-full h-20 sm:h-32 md:h-36 object-cover"
                                     loading="lazy">
                             </div>
                             <h3
-                                class="text-lg md:text-xl font-extrabold mb-2 text-brand-dark group-hover:text-brand-accent transition">
+                                class="text-base md:text-xl font-extrabold mb-1 md:mb-2 text-brand-dark group-hover:text-brand-accent transition">
                                 France</h3>
-                            <p class="text-[9px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6 italic">24h
-                                Express Fulfillment</p>
+                            <p class="text-[8px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 md:mb-6 italic">24h
+                                Express</p>
                             <div
-                                class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
-                                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Service Active
+                                class="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-green-50 text-green-600 rounded-full text-[8px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
+                                <span class="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse"></span> Active
                             </div>
                         </a>
                     </article>
                     <!-- Belgium -->
                     <article class="h-full">
                         <a href="https://www.clickrtrckr.com/2LXFFTP/7GDSK5X/?uid=11718"
-                            class="group block bg-gray-50 p-6 md:p-8 rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
+                            class="group block bg-gray-50 p-4 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
                             <div
-                                class="mb-6 md:mb-8 rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
+                                class="mb-4 md:mb-8 rounded-xl md:rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
                                 <img src="https://flagcdn.com/w640/be.png" alt="Belgium"
-                                    class="w-full h-24 sm:h-32 md:h-36 object-cover" loading="lazy">
+                                    class="w-full h-20 sm:h-32 md:h-36 object-cover" loading="lazy">
                             </div>
                             <h3
-                                class="text-lg md:text-xl font-extrabold mb-2 text-brand-dark group-hover:text-brand-accent transition">
+                                class="text-base md:text-xl font-extrabold mb-1 md:mb-2 text-brand-dark group-hover:text-brand-accent transition">
                                 Belgium</h3>
-                            <p class="text-[9px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6 italic">Direct
-                                Regional Logistics</p>
+                            <p class="text-[8px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 md:mb-6 italic">Direct
+                                Logistics</p>
                             <div
-                                class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
-                                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Service Active
+                                class="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-green-50 text-green-600 rounded-full text-[8px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
+                                <span class="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse"></span> Active
                             </div>
                         </a>
                     </article>
                     <!-- Germany -->
                     <article class="h-full">
                         <a href="https://www.clickrtrckr.com/2LXFFTP/7GDSK5X/?uid=11712"
-                            class="group block bg-gray-50 p-6 md:p-8 rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
+                            class="group block bg-gray-50 p-4 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
                             <div
-                                class="mb-6 md:mb-8 rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
+                                class="mb-4 md:mb-8 rounded-xl md:rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
                                 <img src="https://flagcdn.com/w640/de.png" alt="Germany"
-                                    class="w-full h-24 sm:h-32 md:h-36 object-cover" loading="lazy">
+                                    class="w-full h-20 sm:h-32 md:h-36 object-cover" loading="lazy">
                             </div>
                             <h3
-                                class="text-lg md:text-xl font-extrabold mb-2 text-brand-dark group-hover:text-brand-accent transition">
+                                class="text-base md:text-xl font-extrabold mb-1 md:mb-2 text-brand-dark group-hover:text-brand-accent transition">
                                 Germany</h3>
-                            <p class="text-[9px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6 italic">Central
-                                EU Distribution Hub</p>
+                            <p class="text-[8px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 md:mb-6 italic">Central
+                                Hub</p>
                             <div
-                                class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
-                                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Service Active
+                                class="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-green-50 text-green-600 rounded-full text-[8px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
+                                <span class="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse"></span> Active
                             </div>
                         </a>
                     </article>
                     <!-- Sweden -->
                     <article class="h-full">
                         <a href="https://www.clickrtrckr.com/2LXFFTP/7GDSK5X/?uid=11715"
-                            class="group block bg-gray-50 p-6 md:p-8 rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
+                            class="group block bg-gray-50 p-4 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-gray-100 h-full transition-all duration-500 hover:bg-white hover:shadow-premium hover:-translate-y-2 text-center">
                             <div
-                                class="mb-6 md:mb-8 rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
-                                <img src="https://flagcdn.com/w640/se.png" alt="Sweden" class="w-full h-24 sm:h-32 md:h-36 object-cover"
+                                class="mb-4 md:mb-8 rounded-xl md:rounded-2xl overflow-hidden shadow-md transform group-hover:scale-105 transition-transform duration-700">
+                                <img src="https://flagcdn.com/w640/se.png" alt="Sweden" class="w-full h-20 sm:h-32 md:h-36 object-cover"
                                     loading="lazy">
                             </div>
                             <h3
-                                class="text-lg md:text-xl font-extrabold mb-2 text-brand-dark group-hover:text-brand-accent transition">
+                                class="text-base md:text-xl font-extrabold mb-1 md:mb-2 text-brand-dark group-hover:text-brand-accent transition">
                                 Sweden</h3>
-                            <p class="text-[9px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6 italic">Nordic
-                                Priority Fulfillment</p>
+                            <p class="text-[8px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 md:mb-6 italic">Priority</p>
                             <div
-                                class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
-                                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Service Active
+                                class="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-green-50 text-green-600 rounded-full text-[8px] md:text-[10px] font-black uppercase tracking-widest border border-green-100">
+                                <span class="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse"></span> Active
                             </div>
                         </a>
                     </article>
@@ -416,7 +415,6 @@
                 </header>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-                    <!-- Depoimento 1 -->
                     <article
                         class="bg-gray-50 p-8 md:p-10 rounded-[3rem] border border-gray-100 flex flex-col h-full hover:shadow-2xl hover:bg-white transition-all duration-500 relative group">
                         <div class="flex text-yellow-400 gap-1 mb-6">
@@ -447,7 +445,6 @@
                         </footer>
                     </article>
 
-                    <!-- Depoimento 2 (Central) -->
                     <article
                         class="bg-brand-dark text-white p-8 md:p-10 rounded-[3rem] shadow-premium lg:scale-105 relative z-10 text-center flex flex-col items-center">
                         <div
@@ -481,7 +478,6 @@
                         </footer>
                     </article>
 
-                    <!-- Depoimento 3 -->
                     <article
                         class="bg-gray-50 p-8 md:p-10 rounded-[3rem] border border-gray-100 flex flex-col h-full hover:shadow-2xl hover:bg-white transition-all duration-500 relative group">
                         <div class="flex text-green-500 gap-1 mb-6 leading-none">
@@ -526,7 +522,6 @@
                 </header>
 
                 <div class="space-y-4 md:space-y-5">
-                    <!-- FAQ 1 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -542,7 +537,6 @@
                         </div>
                     </div>
 
-                    <!-- FAQ 2 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -558,7 +552,6 @@
                         </div>
                     </div>
 
-                    <!-- FAQ 3 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -573,7 +566,6 @@
                         </div>
                     </div>
 
-                    <!-- FAQ 4 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -589,7 +581,6 @@
                         </div>
                     </div>
 
-                    <!-- FAQ 5 -->
                     <div
                         class="faq-item border border-gray-200 rounded-[2rem] md:rounded-[2.5rem] bg-gray-50 overflow-hidden cursor-pointer shadow-sm hover:border-brand-accent transition-all duration-300">
                         <div class="faq-question flex justify-between items-center p-6 md:p-8" onclick="toggleFaq(this)">
@@ -626,7 +617,7 @@
 
             <div class="max-w-4xl mx-auto text-center space-y-8 md:space-y-10">
                 <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-bg rounded-lg border border-blue-100">
-                    <i data-lucide="info" class="w-4 h-4 text-brand-accent" aria-hidden="true"></i>
+                    <i data-lucide="info" class="w-4 h-4 text-brand-accent"></i>
                     <span class="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-brand-dark">Official European Operations & Independent Logistics Hub</span>
                 </div>
 
